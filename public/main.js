@@ -1,7 +1,10 @@
-function main() {
-  if (document.querySelector('h1.hello-world')) {
-    document.querySelector('h1.hello-world').textContent = 'Hello, World!'
-  }
+const cardButtons  = document.querySelector('.card button')
+
+
+function handleCardButtonClick() {
+  console.log('Ya clicked it')
 }
 
-document.addEventListener('DOMContentLoaded', main)
+cardButtons.forEach(button =>
+  button.addEventListener('click', handleCardButtonClick)
+)
