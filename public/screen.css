@@ -35,6 +35,11 @@
   pointer-events: none;
 }
 
+.modal-outer.open {
+  opacity: 1;
+  pointer-events: all;
+}
+
 .modal-inner {
   max-width: 600px;
   min-width: 400px;
